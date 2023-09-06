@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas Populares</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza tu archivo de estilos CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Películas Populares</h1>
+
+        <!-- Selector de idioma -->
+        <label for="languageSelect">Seleccionar idioma:</label>
+        <select id="languageSelect">
+            <option value="es">Español</option>
+            <option value="en">Inglés</option>
+        </select>
+
+        <!-- Filtro por género -->
+        <label for="genreSelect">Filtrar por género:</label>
+        <select id="genreSelect">
+            <option value="">Todos los géneros</option>
+            <!-- Las opciones del select se llenarán dinámicamente con JavaScript -->
+        </select>
+        <!-- Botones de Navegación -->
+<button id="anteriorBtn">Anterior</button>
+<button id="siguienteBtn">Siguiente</button>
+
+
+
+
+        <!-- Contenedor para mostrar las películas -->
+        <div id="moviesContainer"></div>
+
+
+
+        <div class="genre-item" data-genre-id="28">Acción</div>
+<div class="genre-item" data-genre-id="12">Aventura</div>
+<!-- ... Otros géneros ... -->
+
+
+
+
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
